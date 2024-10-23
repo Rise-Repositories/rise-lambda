@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "build": "tsc && zip -r build.zip dist",
     "start": "ts-node src/delivery/handler/index.ts"
   },
   "author": "Andrey Rodrigues",

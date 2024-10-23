@@ -7,8 +7,6 @@ class UploadUserPicture {
     try {
         const fileUrl = await S3Helper.uploadFile(userId, file);
 
-        console.log(fileUrl);
-
         return fileUrl
     } catch (error) {
         throw new S3Error('Error uploading');
