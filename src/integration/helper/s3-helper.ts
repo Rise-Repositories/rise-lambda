@@ -16,11 +16,9 @@ class S3Helper{
         };
         return new Promise((resolve, reject) => {
             this.s3Client.putObject(params, (err: any, data: any) => {
-                console.log('err', err);
                 if (err) {
                     reject(err);
                 }
-                console.log('data', data);
                 resolve(data);
             });
         });

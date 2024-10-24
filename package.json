@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "tsc && npm prune --production && zip -r build.zip dist",
+    "build": "tsc && npm prune --production && zip -r build.zip dist node_modules",
     "start": "ts-node src/delivery/handler/index.ts"
   },
   "author": "Andrey Rodrigues",
